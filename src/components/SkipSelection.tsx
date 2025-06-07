@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { ChevronRight, Truck, Calendar, PoundSterling, Shield, CheckCircle, Info, X } from 'lucide-react';
+import { ChevronRight, Truck, Calendar, PoundSterling, CheckCircle, Info, X } from 'lucide-react';
 
 interface Skip {
   id: number;
@@ -279,81 +278,6 @@ export default function SkipSelection({ selectedSkipId, onSkipSelect }: SkipSele
     }
   };
   return (
-    // <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-    //   {/* Page Header */}
-    //   <div className="bg-white shadow-sm border-b">
-    //     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    //       <div className="text-center">
-    //         <h1 className="text-3xl font-bold text-gray-900 mb-2">Choose Your Skip Size</h1>
-    //         <p className="text-gray-600 max-w-2xl mx-auto">
-    //           Select the perfect skip for your waste management needs. All prices include delivery and collection within our service area.
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   {/* Skip Cards Grid */}
-    //   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    //     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    //       {skipData.map((skip) => (
-    //         <SkipCard
-    //           key={skip.id}
-    //           skip={skip}
-    //           isSelected={selectedSkipId === skip.id}
-    //           onSelect={onSkipSelect}
-    //         />
-    //       ))}
-    //     </div>
-
-    //     {/* Selected Skip Summary */}
-    //     {selectedSkipId && (() => {
-    //       const selectedSkip = skipData.find(skip => skip.id === selectedSkipId);
-    //       if (!selectedSkip) return null;
-
-    //       const totalPrice = Math.round(selectedSkip.price_before_vat * (1 + selectedSkip.vat / 100));
-
-    //       return (
-    //         <div className="fixed bottom-0 left-0 w-full bg-white border-t border-blue-300 shadow-xl z-50 p-6">
-    //           <h3 className="text-xl font-bold text-gray-900 mb-4">Your Selection</h3>
-    //           <p className="text-sm text-gray-700 mb-4">
-    //             Imagery and information shown throughout this website may not reflect the exact shape or size specification,
-    //             colours may vary, options and/or accessories may be featured at additional cost.
-    //           </p>
-    //           <div className="flex items-center justify-between">
-    //             <div>
-    //               <p className="text-lg font-semibold text-gray-900">
-    //                 {selectedSkip.size} Yard Skip
-    //               </p>
-    //               <p className="text-gray-600">
-    //                 {selectedSkip.hire_period_days} day hire period
-    //               </p>
-    //             </div>
-    //             <div className="text-right">
-    //               <p className="text-2xl font-bold text-green-600">£{totalPrice}</p>
-    //               <p className="text-sm text-gray-500">inc. VAT</p>
-    //             </div>
-    //           </div>
-
-    //           <div className="flex justify-between mt-6">
-    //             <button
-    //               onClick={() => window.history.back()}
-    //               className="px-6 py-2 bg-gray-200 text-gray-800 font-semibold rounded-md hover:bg-gray-300"
-    //             >
-    //               Back
-    //             </button>
-    //             <button
-    //               onClick={() => window.location.href = '/next-page'} // 🔁 Replace with routing logic
-    //               className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700"
-    //             >
-    //               Continue
-    //             </button>
-    //           </div>
-    //         </div>
-    //       );
-    //     })()}
-
-    //   </div>
-    // </div>
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-blue-50">
 
   {/* 🔷 Hero Page Header */}
@@ -450,7 +374,7 @@ export default function SkipSelection({ selectedSkipId, onSkipSelect }: SkipSele
                 <p className="text-sm text-gray-700 flex items-start gap-2">
                   <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                   Imagery and information shown throughout this website may not reflect the exact shape or size specification,
-                  colours may vary, options and/or accessories may be featured at additional cost.
+                  colors may vary, options and/or accessories may be featured at additional cost.
                 </p>
               </div>
               
